@@ -7,6 +7,22 @@
 
 
 ##### Cài đặt
+** Các thư viện yêu cầu**
+```
+<link rel="stylesheet" href="bootstrap.min.css">
+<link> rel="stylesheet" href="fontawesome.css">
+
+<script src="underscore.js"></script>
+<script src="jquery.js"></script>
+<script src="jquery.svg.min.js"></script>
+<script src="brat.js"></script>
+<script src="angular.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="ui-bootstrap-tpls.min.js"></script>
+
+
+
+```
 
 Thêm javascript và css vào index.html
 
