@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="./directive/text-annotation.css">
+</head>
+<body ng-app="myApp" ng-controller="TextAnnotation">
+<b>POS Tag</b>
+<br/>
+<p>editable: true, multilabel: true</p>
+<text-annotation config="pos_tag.config" doc="pos_tag.doc" editable="true" multilabel="true"
+                 confirm="true"></text-annotation>
+<br/>
+<p>editable: true, multilabel: false</p>
+<text-annotation config="pos_tag.config" doc="pos_tag.doc" editable="true" multilabel="false"
+                 confirm="false"></text-annotation>
+<br/>
+<p>editable: false</p>
+<text-annotation config="pos_tag.config" doc="pos_tag.doc" editable="false" confirm="true"></text-annotation>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore.js"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
+
+<script src="./resources/lib/jquery.svg.min.js"></script>
+<script src="./resources/brat/configuration.js"></script>
+<script src="./resources/brat/annotation_log.js"></script>
+<script src="./resources/brat/webfont.js"></script>
+<script src="./resources/brat/dispatcher.js"></script>
+<script src="./resources/brat/url_monitor.js"></script>
+<script src="./resources/brat/visualizer.js"></script>
+<script src="./resources/brat/util.js"></script>
+
+<script
+        src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script
+        src="https://getbootstrap.com/docs/3.3/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+<script src="./configs/pos_tag.js"></script>
+<script src="./resources/brat/util-tags.js"></script>
+<script src="app.js"></script>
+
+<script component="text-annotation-script" src="./directive/text-annotation.js"></script>
+<script src="./directive/update-annotation-modal.js"></script>
+<script src="./directive/new-annotation-modal.js"></script>
+
+<script src="controller.js"></script>
+</body>
+</html>
